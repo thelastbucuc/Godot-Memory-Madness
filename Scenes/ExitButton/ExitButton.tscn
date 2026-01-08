@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhx27x4elb44f"]
+
+[ext_resource type="Texture2D" uid="uid://2spm7ws7irw6" path="res://assets/ui/blue_button00.png" id="1_ox72q"]
+[ext_resource type="Texture2D" uid="uid://bewij4tdmxyo1" path="res://assets/ui/green_button00.png" id="2_mfel4"]
+[ext_resource type="FontFile" uid="uid://duj50lmk4fp7g" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="2_qd3qg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mfel4"]
+font = ExtResource("2_qd3qg")
+font_size = 32
+
+[node name="ExitButton" type="TextureButton"]
+anchors_preset = -1
+anchor_left = 0.481
+anchor_top = 0.494
+anchor_right = 0.481
+anchor_bottom = 0.494
+offset_left = -75.544
+offset_top = -19.892
+offset_right = 114.456
+offset_bottom = 29.108
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("1_ox72q")
+texture_pressed = ExtResource("2_mfel4")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.5
+offset_top = -16.5
+offset_right = 30.5
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Exit"
+label_settings = SubResource("LabelSettings_mfel4")
+horizontal_alignment = 1
+vertical_alignment = 1
